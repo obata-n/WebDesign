@@ -18,6 +18,12 @@ body {
   line-height: 1.6;
 }
 
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
 header {
   max-width: 960px;
   margin: 0 auto;
@@ -42,7 +48,7 @@ header {
   padding: 0;
 }
 
-li {
+.navi li {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
@@ -60,6 +66,10 @@ li {
   font-size: 10vw;
   color: #bbb;
   padding: 0 20px;
+}
+
+.h3.year {
+  margin: 0 auto;
 }
 
 .list {
@@ -90,6 +100,53 @@ li {
   padding: 0 10px;
 }
 
+.title {
+  color: rgb(255, 87, 34);
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 29px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #CFD8DC;
+  margin: 28px auto 0;
+  width: 100px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.portfolio-img {
+  max-width: 384px;
+}
+
+.portfolio-img img {
+  width: 100%;
+}
+
+.sub-title {
+  color: #f47402;
+  font-size: 2.0rem;
+  margin-bottom: -5px;
+}
+
+.about-list {
+  padding-left: 20px;
+}
+
+.my-portfolio {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 1.9rem;
+  color: #584131;
+}
+
 /* メディアクエリ */
 
 @media (min-width: 376px) {
@@ -104,6 +161,21 @@ li {
 @media (min-width: 640px) {
   .list-item {
     width: calc(100%/3);
+  }
+  .container {
+    display: flex;
+  }
+  .left.margintop {
+    margin-top: 10px;
+  }
+  .right.margintop {
+    margin-top: 30px;
+  }
+  .right {
+    padding: 0 30px;
+  }
+  .right.margintop2 {
+    margin-top: -10px;
   }
 }
 
